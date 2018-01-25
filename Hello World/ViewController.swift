@@ -10,14 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var HelloLabel: UILabel!
+    @IBOutlet weak var helloLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+            helloLabel.text = "Welcome!"
         
-        HelloLabel.text = "Welcome!"
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,11 +26,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sayHello(_ sender: UIButton) {
-        HelloLabel.text = "Hello World"
+        helloLabel.text = "Hello World"
     }
     
     @IBAction func ClearLabel(_ sender: UIButton) {
-        HelloLabel.text = ""
+        helloLabel.text = ""
     }
 }
 
